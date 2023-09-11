@@ -1,3 +1,10 @@
+:root{
+  --dark-gray: #272727 ;
+  --light-gray: #f5f5f5;
+  --white: #fff;
+  --smooth: all .3s ease-in;
+}
+
 .header{
     height: 100px;
     align-items: center;

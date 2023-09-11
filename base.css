@@ -1,8 +1,4 @@
-:root{
-    --dark-gray: #272727 ;
-    --light-gray: #f5f5f5;
-    --white: #fff;
-}
+
 
 html{
     background-color: var(--white);
