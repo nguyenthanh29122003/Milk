@@ -1,0 +1,306 @@
+.header{
+    height: 100px;
+    align-items: center;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.header--middle img{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.header--middle a{
+    text-decoration: none;
+    color: var(#272727);
+}
+
+.header--middle span{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.header--right img{
+    height: 30px;
+    width: 30px;
+}
+
+.header--right a{
+    margin: 13px;
+    cursor: pointer;
+    box-sizing: padding-box;
+}
+
+.header--right a:hover{
+    padding-top: 5px;
+}
+
+.desk-menu{
+    height: 40px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 1px;
+    border-bottom: 1.5px solid var(--light-gray);
+}
+
+.product-selections a{
+  text-decoration: none;
+    display: inline;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 10px 16px;
+    color: #272727;
+}
+
+.product-selections a:hover{
+    border-bottom: #272727 solid 2.5px;
+}
+
+.banner{
+    display: flex;
+    padding: 50px 50px;
+    justify-content: center;
+}
+
+.banner img{
+  border-radius: 15px;
+}
+
+.container{
+    padding: 10px 50px;
+}
+
+.container h1{
+    margin-bottom: 60px;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.products__item{
+    max-width: 25%;
+    height: 450px;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    cursor: pointer;
+    box-sizing: content-box;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.products__item img:hover{
+    opacity: 0.5;
+}
+
+.products__item--sale{
+    margin-left: 15px;
+    width: 25%;
+    color: #f94c43;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 2px;
+    border: solid #f94c43 2px;
+    border-radius: 10px;
+}
+
+.products__item img{
+    height: 300px;
+    width: 270px;
+}
+
+.products__item p{
+    font-size: 1.5rem;
+}
+
+.old-price{
+  text-decoration: line-through;
+  color: #939393;
+}
+.products__item .price{
+    display: flex;
+    justify-content: space-around;
+}
+
+.new-price{
+  color: #f94c43;
+}
+
+.price button{
+    height: 36px;
+    width: 90px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
+.price button:hover{
+    background-color: #f1f1f1;
+}
+
+/* width */
+::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  .container-sale{
+    margin-top: 60px;
+  }
+
+
+  .footer{
+    height: 350px;
+    margin-top: 50px;
+    border-top: var(--light-gray) 2px solid;
+    display: flex;
+    padding:10px;
+    justify-content: space-around;
+  }
+
+  .footer__item{
+    margin-top: 50px;
+  }
+
+  .footer__item p{
+    font-size: 2rem;
+  }
+
+  .footer ul{
+    list-style-type: '- ';
+    font-size: 1.7rem;
+    text-align: start;
+  }
+
+  .footer img{
+    height: 55px;
+    width: 152px;
+  }
+
+  .footer .media-button{
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px black;
+    cursor: pointer;
+  }
+
+  .footer .media-button:hover{
+    border: solid 5px #555;
+    background-color: white;
+    color: black;
+    box-sizing: content-box;
+  }
+
+
+  /* The overlay effect with black background */
+.overlay {
+  height: 40px;
+  width: 300px;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 180px;
+  margin-top: 12px;
+}
+
+.overlay img{
+  height: 30px;
+  width: 30px;
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+/* Close button */
+.overlay .closebtn {
+  position: absolute;
+  font-size: 26px;
+  cursor: pointer;
+  color: black;
+  margin-top: -28px;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  
+  border-radius: 10px;
+  border: #555 solid 2px;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.overlay button {
+  float: left;
+  width: 20%;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
