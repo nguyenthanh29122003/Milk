@@ -274,99 +274,27 @@ border-radius: 15px;
 /* products container */
 
 .container{
+  margin: 60px;
   padding: 10px 68px;
 }
 
 h1{
-  margin-bottom: 60px;
   font-size: 3.2rem;
   text-align: center;
 }
 
-.products{
-  display: flex;
-  justify-content: space-between;
-  overflow: auto;
-}
-
-.products__item{
-  max-width: 25%;
-  height: 450px;
-  justify-content: center;
+h2{
+  font-size: 2.7rem;
   text-align: center;
-  flex-grow: 1;
-  cursor: pointer;
-  box-sizing: content-box;
-  margin: 5px;
-  border-radius: 10px;
-  transition: var(--smooth);
 }
 
-.products__item img:hover{
-  transition: var(--smooth);
-  opacity: 0.5;
-}
-
-/* sale products container */
-
-.products__item--sale{
-  margin-left: 15px;
-  width: 30%;
-  color: #f94c43;
+h5{
   font-size: 1.5rem;
-  position: relative;
-  padding: 2px;
-  border: solid #f94c43 2px;
-  border-radius: 10px;
-}
-
-.products__item img{
-  height: 300px;
-  width: 270px;
-}
-
-.products__item p{
-  font-size: 1.5rem;
-}
-
-.old-price{
-  text-decoration: line-through;
-  color: #939393;
-}
-.products__item .price{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 4px;
-  box-sizing: border-box;
-}
-
-.new-price{
-  color: #f94c43;
-}
-
-.products__item button{
-  justify-content: end;
-  font-size: 1rem;
-  height: 36px;
-  width: 90px;
-  background-color: transparent;
-  border-radius: 10px;
-  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+  text-decoration: underline;
   cursor: pointer;
-  transition: var(--smooth);
-} 
-
-.products__item button:hover{
-  background-color: #f1f1f1;
-  transition: var(--smooth);
 }
-
-.container-sale{
-  margin-top: 60px;
-}
-
-/* scrollbar */
 
 /* width */
 ::-webkit-scrollbar {
@@ -474,6 +402,7 @@ h1{
 }
 
 .milk-list__item{
+  margin-top: 50px;
   cursor: pointer;
   font-size: 2rem;
   width: 25%;
@@ -482,7 +411,7 @@ h1{
   transition: var(--smooth);
 }
 
-.milk-list__item a{
+.milk-list__item li{
   margin: 10px auto;
   transition: var(--smooth);
 }
@@ -494,7 +423,7 @@ h1{
   transition: var(--smooth);
 }
 
-.milk-list__item:hover > a{
+.milk-list__item:hover > li{
   transform: translateY(-50%);
   opacity: 0.6;
   transition: var(--smooth);
@@ -504,4 +433,83 @@ h1{
   transform: translateY(-20%);
   opacity: 0.6;
   transition: var(--smooth);
+}
+
+
+
+.milk_items{
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 10px;
+}
+
+.milk_items__item{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 450px;
+  padding: 20px;
+  transition: var(--smooth);
+}
+
+.milk_items__item:hover{
+  opacity: 0.7;
+  transform: translateY(-2%);
+  transition: var(--smooth);
+}
+
+.milk_items__item p{
+  padding: 6px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+
+.milk_items__item h6{
+  padding-left: 10px;
+  font-size: 1.6rem;
+}
+
+.saling{
+  width: 100%;
+  display: flex;
+}
+
+.milk_items__item h4
+{
+  margin-top: 10px;
+  width: 50%;
+  padding-left: 10px;
+  font-size: 1.6rem;
+  color: red;
+}
+
+.milk_items__item--sale-price{
+  width: 50%;
+  text-decoration: line-through;
+  color: var(--dark-gray) !important;
+}
+
+.milk_items__item button{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.4rem;
+  width: 90px;
+  background-color: transparent;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  transition: var(--smooth);
+}
+
+.milk_items__item--tag-sale{
+  font-size: 1.6rem;
+  width: 80px;
+  color: red;
+  border: red 2px solid;
+  border-radius: 10px;
+  padding: 2px;
 }
