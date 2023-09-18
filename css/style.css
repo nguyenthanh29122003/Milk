@@ -251,12 +251,23 @@ ul{
   font-size: 2rem;
   margin: 10px 16px;
   color: #272727;
-  transition: all .1s ease-in;
+  transition: var(--smooth);
+  position: relative;
 }
 
-.product-selections a:hover{
-  border-bottom: #272727 solid 2.5px;
-  transition: all .1s ease-in;
+.product-selections a::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-gray);
+  transition: var(--smooth);
+}
+
+.product-selections a:hover::after{
+  width: 90%;
 }
 
 /* banner */
