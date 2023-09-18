@@ -58,6 +58,7 @@ function ShowL(){
     document.querySelector(".hidden-form__recovery").style. transition = "var(--smooth)";
 }
 
+
 function ShowC(){
     document.querySelector(".hidden-form__cart").style.opacity = "1";
     document.querySelector(".hidden-form__cart").style.transform = "translateX(0)";
@@ -112,4 +113,8 @@ function ShowReP(){
     document.querySelector(".hidden-form__recovery").style.opacity = "1";
     document.querySelector(".hidden-form__recovery").style.transform = "translateX(0)";
     document.querySelector(".hidden-form__recovery").style. transition = "var(--smooth)";
+}
+
+function showItem(){
+    document.location = 'product_1.html';
 }
