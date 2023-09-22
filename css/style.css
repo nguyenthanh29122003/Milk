@@ -930,7 +930,6 @@ h5{
   padding: 10px 5px;
   display: flex;
   justify-content: space-between;
-  border-bottom: var(--light-gray) 1px solid;
 }
 
 ul{
@@ -1005,20 +1004,20 @@ ul{
 /* nav-bar */
 
 .desk-menu{
-  height: 40px;
+  height: 24px;
   padding: 0px;
   display: flex;
   justify-content: center;
   border-radius: 1px;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: var(--light-gray) 1px solid;
 }
 
 .product-selections a{
   text-decoration: none;
   display: inline;
   cursor: pointer;
-  font-size: 1.4rem;
-  margin: 10px 1px;
+  font-size: 1.1rem;
+  margin: 1px 4px;
   color: #272727;
   transition: var(--smooth);
   position: relative;
@@ -1027,7 +1026,7 @@ ul{
 .product-selections a::after{
   content: "";
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 0;
   bottom: 0;
   left: 0;
@@ -1098,7 +1097,7 @@ h5{
 
 /* footer */
 .footer{
-  height: 350px;
+  height: 300px;
   margin: 10px 2px;
   border-top: var(--light-gray) 2px solid;
   display: flex;
@@ -1152,9 +1151,6 @@ h5{
   color: white;
   background-color: black;
   border-radius: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   border: solid 0.6px black;
   cursor: pointer;
   margin: 10px 0;
@@ -1189,15 +1185,25 @@ h5{
   display: flex;
   justify-content: space-between;
 }
+.milk-list h1{
+  font-size: 2rem;
+}
+.milk-list h2{
+  font-size: 1.4rem;
+}
+
+.milk-list a{
+  font-size: 1.3rem;
+}
 
 .milk-list__item{
-  margin-top: 30px;
+  margin-top: 20px;
   cursor: pointer;
-  font-size: 2rem;
   width: 25%;
   display: flex;
   flex-direction: column;
   transition: var(--smooth);
+  text-align: center;
 }
 
 .milk-list__item li{
@@ -1206,8 +1212,8 @@ h5{
 }
 
 .milk-list__item img{
-  height: 80px;
-  width: 80px;
+  height: 30px;
+  width: 30px;
   margin: 0 auto;
   transition: var(--smooth);
 }
@@ -1230,7 +1236,6 @@ h5{
   display: flex;
   margin-left: 0;
   margin-top: 10px;
-  overflow-x: auto;
 }
 
 .milk_items__item{
@@ -1390,7 +1395,7 @@ h5{
 }
 
 .all_items .milk_items__item{
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 
@@ -1419,18 +1424,19 @@ h5{
 .path{
   background-color: #fafafa; 
   width: 100%; 
-  height: 50px; 
-  font-size: 2rem; 
-  padding: 10px;
+  height: 30px; 
+  font-size: 1.5rem; 
+  padding: 5px;
   border-top: #f5f5f5 2px solid;
 }
 
 .item{
   display: flex;
+  flex-direction: column;
 }
 
 .item__img{
-  width: 60%;
+  width: 100%;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -1442,29 +1448,34 @@ h5{
 }
 
 .item__infor{
-  width: 40%;
-  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .item__name{
-  margin-bottom: 20px;
-  font-size: 5rem;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
 }
 
 .item__price{
-  padding: 10px;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
+  padding: 0px;
   border-top: #f5f5f5 1px solid;
+  margin: 0;
 }
 
 .item__quantity{
+  margin: 0;
   display: flex;
-  padding-top: 40px;
-  padding-left: 10px;
+  padding-top: 10px;
+  padding-left: 0px;
   border-top: #f5f5f5 1px solid;
 }
 
 .item__quantity--btn{
+  display: none;
   float: left;
   background: #f3f4f4;
   border: solid 1px #c1c1c1;
@@ -1479,44 +1490,43 @@ h5{
 }
 
 .item__quantity--input{
-  float: left;
   border: solid 1px #bdbdbd;
   cursor: pointer;
   font-weight: 600;
   font-size: 16px;
   outline: none;
   height: 40px;
-  width: 100px;
+  width: 60px;
   text-align: center;
   border-radius: 0;
-  margin-inline: 10px;
+  margin: 0;
+
 }
 
 .item__btn{
-  margin-top: 5px;
+  margin-top: 2px;
   border-top: #f5f5f5 1px solid;
-  padding-left: 10px;
+  padding-left: 6px;
   display: flex;
+  justify-content: space-around;
 }
 .item__btn button{
   width: 40%;
+  margin: 6px 10px;
+  font-size: 1.3rem;
 }
 
 .item__description{
-  padding: 10px;
-  margin-top: 30px;
-  font-size: 2rem;
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 1.3rem;
 }
   
 .container__title{
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   border-bottom: #555 1px solid;
   padding: 10px;
 }
 
-.related-products{
-  display: flex;
-  flex-wrap: wrap;
-}
 }
