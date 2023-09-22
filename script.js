@@ -116,5 +116,7 @@ function ShowReP(){
 }
 
 function showItem(){
+    // var imgSrc = document.getElementById("#milk_1").scr;
+    // document.querySelector(".item__img img").src = imgSrc;
     document.location = 'product_1.html';
 }
