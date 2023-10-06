@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
         <title>VietMilk</title>
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,8 @@
                     <a><img clas src=".\images\search-interface-symbol.png"></a>
                 </div>
             </form>
+
+
 
             <form class="hidden-form hidden-form__login">
                 
@@ -210,12 +212,92 @@
                 </div>
 
                 <div class="hidden-form__footer">
-                    <div class="hidden-form__footer--total">Tcondensed_milk_otal: <span>000₫</span></div>
+                    <div class="hidden-form__footer--total">Total: <span>000₫</span></div>
                     <button class="hidden-form__footer__btnPayUp">Pay up</button>
                 </div>
                             
             </form>
+            <!-- add -->
+            <form class="hidden-form hidden-form__add">
+              <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+              <p class="hidden-form__title">Thêm sản phẩm</p>
+              <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+              </div>
+      
+              <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+              </div>
+      
+              <div class="form_field">
+                <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+              </div>
+              
+              <div class="form_field">
+                <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+              </div>
+              
+              <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+              </div>
+              
+              <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+              </div>
 
+              <div class="products_manager__btn">
+                <button>Thêm sản phẩm</button>
+            </div>
+          </form>
+
+
+          <!-- update form -->
+          <form class="hidden-form hidden-form__update">
+            <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+            <p class="hidden-form__title">Cập nhật sản phẩm</p>
+            <p class="hidden-form__sub-title">Nhập mã sản phẩm sau đó chỉnh sửa</p>
+            <div class="form_field">
+              <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+            </div>
+    
+            <div class="form_field">
+              <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+            </div>
+    
+            <div class="form_field">
+              <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+            </div>
+            
+            <div class="form_field">
+              <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+            </div>
+            
+            <div class="form_field">
+              <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+            </div>
+            
+            <div class="form_field">
+              <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+            </div>
+
+            <div class="products_manager__btn">
+              <button>Thêm sản phẩm</button>
+          </div>
+          </form>
+
+          <!-- delete form -->
+          <form class="hidden-form hidden-form__delete">
+
+            <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+            <p class="hidden-form__title">Xóa sản phẩm</p>
+            <p class="hidden-form__sub-title">Nhập mã sản phẩm để xóa</p>
+            <div class="form_field">
+              <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+            </div>
+            <div class="products_manager__btn">
+              <button>Xóa sản phẩm</button>
+          </div>
+          </form>
         </div>
             
         <!-- header -->
@@ -247,143 +329,293 @@
         <!-- nav-bar -->
         <div class="desk-menu">
             <ul class="product-selections">
-                <a href="index.html" class="product__item" >HOME</a>
-                <a href="new_arrivals_1.html" class="product__item">NEW ARRIVALS</a>
-                <a href="all_products.html" class="product__item">ALL PRODUCTS</a>
-                <a href="sale_arrivals_1.html" class="product__item">SALE</a>
-                <a href="#footer" class="product__item">CONTACT</a>
+              <a href="index.html" class="product__item">HOME</a>
+              <a href="products_manager.html" class="product__item">PRODUCTS</a>
+              <a href="users_manager.html" class="product__item">USERS</a>
+              <a href="orders_manager.html" class="product__item">ODERS</a>
             </ul>
         </div>
         
-        <!-- banner -->
-        <div class="banner">
-            <img src=".\images\banner-milk.png">
-        </div>
+        
+<!-- path -->
+<div class="container">
+    <div class="path">
+        <p class="path__title">Home / Manager / Products</p>
+    </div>
+ </div>
+  
 
 
-        <!-- Condensed milk items -->
-        <div id="sale_container" class="container">
-            <h2>Condensed Milk</h2>
-            <div class="milk_items  all_items">
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-                <div class="milk_items__item" onclick="showItem()">
-                    <img src="https://product.hstatic.net/1000282430/product/sua-dac-huu-co-california-farms-397g_783554be68064046b9fc7cb7c0324800_master.jpg">
-                    <p>Sữa Đặc Hữu Cơ California Farms 397G</p>
-                    <h6>179.900₫</h6>
-                    <button>ADD TO CART</button>
-                </div>
-                
-               
-            </div>
-            <div class="pages-items">
-                <a class="pages-item" href="condensed_milk_1.html"
-                style="border-radius: 100%;
-                border: solid 1px black;
-                cursor: pointer;">1</a>
-                <a class="pages-item" href="condensed_milk_2.html">2</a>
-                <a class="pages-item" href="condensed_milk_3.html">3</a>
-                <a class="pages-item" href="condensed_milk_4.html">4</a>
-                <a class="pages-item" href="condensed_milk_5.html">5</a>
-            </div>
-        </div>
+  <!-- table -->
+  <!-- <div class="products_manager">
+    <div class="products_manager__input">
+      <form class="form_input">
+        
+      </form>
+    </div>
+    
+    
+    
+  </div> -->
+
+  
+
+  <div class="container">
+    <h1>Thông tin sản phẩm</h1>
+    <div class="action">
+      <a onclick="showAdd()" title="Add a new product"><img src="/Milk/images/add.png" alt="">Thêm sản phẩm</a>
+      <a onclick="showUpd()" title="Add a new product"><img src="/Milk/images/refresh.png" alt="">Sửa sản phẩm</a>
+      <a onclick="showDel()" title="Add a new product"><img src="/Milk/images/delete.png" alt="">Xóa sẩn phẩm</a>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Mã sản phẩm</th>
+          <th>Tên sản phẩm</th>
+          <th>Ngày nhập</th>
+          <th>Số lượng</th>
+          <th>Tên phân loại</th>
+          <th>Nhà cung cấp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SP001</td>
+          <td>Sữa tươi</td>
+          <td>2023-09-30</td>
+          <td>100</td>
+          <td>Đồ uống</td>
+          <td>Công ty A</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+        <!-- Thêm các hàng (rows) khác tại đây -->
+        <tr>
+          <td>SP002</td>
+          <td>Sữa đặc</td>
+          <td>2023-10-01</td>
+          <td>50</td>
+          <td>Đồ uống</td>
+          <td>Công ty B</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 
         <!-- footer -->
         <footer id="footer" class="footer">
@@ -417,5 +649,6 @@
                 <a class="footer media-button" href="contact_form.html">C</a>
             </div>
         </footer>
+
     </body>
-</html>
+    </html>

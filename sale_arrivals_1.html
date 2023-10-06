@@ -15,7 +15,7 @@
     <body>
         <!-- javascript -->
     <script type="text/javascript" src="script.js"></script>
-        <!-- hidden form -->
+        <div id="overlay" onclick="CloseF()"></div>
         <div class="hidden-forms">
             <form class="hidden-form hidden-form__search">
                 
@@ -60,7 +60,88 @@
             </form>
 
 
-            <!-- form signup -->
+            
+<!-- add -->
+<form class="hidden-form hidden-form__add">
+    <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+    <p class="hidden-form__title">Thêm sản phẩm</p>
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+    </div>
+
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+    </div>
+
+    <div class="form_field">
+      <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+    </div>
+    
+    <div class="form_field">
+      <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+    </div>
+    
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+    </div>
+    
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+    </div>
+
+    <div class="products_manager__btn">
+      <button>Thêm sản phẩm</button>
+  </div>
+</form>
+
+
+<!-- update form -->
+<form class="hidden-form hidden-form__update">
+  <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+  <p class="hidden-form__title">Cập nhật sản phẩm</p>
+  <p class="hidden-form__sub-title">Nhập mã sản phẩm sau đó chỉnh sửa</p>
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+  </div>
+
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+  </div>
+
+  <div class="form_field">
+    <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+  </div>
+  
+  <div class="form_field">
+    <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+  </div>
+  
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+  </div>
+  
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+  </div>
+
+  <div class="products_manager__btn">
+    <button>Thêm sản phẩm</button>
+</div>
+</form>
+
+<!-- delete form -->
+<form class="hidden-form hidden-form__delete">
+
+  <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+  <p class="hidden-form__title">Xóa sản phẩm</p>
+  <p class="hidden-form__sub-title">Nhập mã sản phẩm để xóa</p>
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+  </div>
+  <div class="products_manager__btn">
+    <button>Xóa sản phẩm</button>
+</div>
+</form>
             <form class="hidden-form hidden-form__signup">
                 
                 <a class="hidden-form__back"  onclick = "ShowL()"><</a>
@@ -380,7 +461,7 @@
                 <p>FANPAGE</p>
                 <a href="https://www.facebook.com/" class="footer media-button">f</a>
                 <a class="footer media-button">i</a>
-                <a class="footer media-button">G</a>
+                <a class="footer media-button" href="contact_form.html">C</a>
             </div>
         </footer>
 

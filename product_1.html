@@ -15,7 +15,7 @@
     <body>
         <!-- javascript -->
     <script type="text/javascript" src="script.js"></script>
-        <!-- hidden form -->
+        <div id="overlay" onclick="CloseF()"></div>
         <div class="hidden-forms">
             <form class="hidden-form hidden-form__search">
                 
@@ -60,7 +60,88 @@
             </form>
 
 
-            <!-- form signup -->
+            
+<!-- add -->
+<form class="hidden-form hidden-form__add">
+    <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+    <p class="hidden-form__title">Thêm sản phẩm</p>
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+    </div>
+
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+    </div>
+
+    <div class="form_field">
+      <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+    </div>
+    
+    <div class="form_field">
+      <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+    </div>
+    
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+    </div>
+    
+    <div class="form_field">
+      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+    </div>
+
+    <div class="products_manager__btn">
+      <button>Thêm sản phẩm</button>
+  </div>
+</form>
+
+
+<!-- update form -->
+<form class="hidden-form hidden-form__update">
+  <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+  <p class="hidden-form__title">Cập nhật sản phẩm</p>
+  <p class="hidden-form__sub-title">Nhập mã sản phẩm sau đó chỉnh sửa</p>
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+  </div>
+
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+  </div>
+
+  <div class="form_field">
+    <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+  </div>
+  
+  <div class="form_field">
+    <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+  </div>
+  
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+  </div>
+  
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+  </div>
+
+  <div class="products_manager__btn">
+    <button>Thêm sản phẩm</button>
+</div>
+</form>
+
+<!-- delete form -->
+<form class="hidden-form hidden-form__delete">
+
+  <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+  <p class="hidden-form__title">Xóa sản phẩm</p>
+  <p class="hidden-form__sub-title">Nhập mã sản phẩm để xóa</p>
+  <div class="form_field">
+    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+  </div>
+  <div class="products_manager__btn">
+    <button>Xóa sản phẩm</button>
+</div>
+</form>
             <form class="hidden-form hidden-form__signup">
                 
                 <a class="hidden-form__back"  onclick = "ShowL()"><</a>
@@ -182,12 +263,12 @@
         <div class="container">
             <div class="item">
                 <div class="item__img">
-                    <img src="./images/milk.png" alt="items-photo">
+                    <img src="https://product.hstatic.net/1000282430/product/sua-bo-huu-co-vi-socola-it-beo-koita-_200ml__b60ea035f7114411b21b8101f4a9707c_master.jpg" alt="items-photo">
                     <!-- <img src="https://product.hstatic.net/1000282430/product/sua-bo-huu-co-vi-socola-it-beo-koita-_200ml__b60ea035f7114411b21b8101f4a9707c_master.jpg" alt="items-photo"> -->
                 </div>
                 <div class="item__infor">
-                    <p class="item__name">Name of the item</p>
-                    <p class="item__price">Price of the item</p>
+                    <p class="item__name">Sữa Hữu Cơ Tiệt Trùng Hương Chocolate Koita 200Ml</p>
+                    <p class="item__price">39,900₫</p>
                     <div class="item__quantity">
                         <input class="item__quantity--btn" onclick="minus_qty()" type="button" value="-">
                         <input class="item__quantity--input" type="number">
@@ -197,7 +278,8 @@
                         <button>ADD TO CART</button>
                         <button>BUY NOW</button>
                     </div>
-                    <p class="item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at ipsum sit velit sint rerum autem aspernatur totam excepturi eos provident mollitia aperiam animi tenetur omnis consectetur, repudiandae optio illum!</p>
+                    <p class="item__description">Việc chọn sữa cho bé sau 1 tuổi là vấn đề của rất nhiều mẹ quan tâm. Nếu chọn dùng sữa bò nên dùng sữa bò hữu cơ có thể tránh được một số hạn chế của sữa bò thông thường. 👉Sữa hữu cơ Koita là sữa tiệt trùng được thiết kế với hộp giấy dễ thương, thân thiện với môi trường, không sử dụng ống hút thay vào đó là nắp vặn tiện lợi. Mẹ có thể mở nắp thêm chút bột dinh dưỡng, bột tảo, bột mạ lúa mì... Cho bé uống. Khi uống không hết vặn lại bỏ ngăn mát sử dụng 3-4 ngày hoặc cho các bạn nhỏ đem đi học, đi chơi.                        </p>
+                        <p class="item__description">❤️KOITA là một dòng sữa chất lượng đến từ nước Ý, đạt đầy đủ các tiêu chuẩn của Châu Âu và chuẩn Organic của thế giới ❗ Không chứa độc tố thuốc trừ sâuKhông chứa chất bảo quảnKhông chứa kháng sinh Được chọn lọc từ những đàn bò hạnh phúc trên đất nước Ý Được bổ sung thêm Vitamin A và D3 hỗ trợ cho sự phát triển tối ưu của trẻ nhỏ Một phần lợi nhuận của hãng sẽ được góp cho các tổ chức từ thiện</p>
                 </div>
             </div>
         </div>
@@ -310,7 +392,7 @@
                 <p>FANPAGE</p>
                 <a href="https://www.facebook.com/" class="footer media-button">f</a>
                 <a class="footer media-button">i</a>
-                <a class="footer media-button">G</a>
+                <a class="footer media-button" href="contact_form.html">C</a>
             </div>
         </footer>
 

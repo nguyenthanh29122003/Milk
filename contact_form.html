@@ -37,10 +37,11 @@
 
                 <p class="hidden-form__sub-title">Sign in with your username and password</p>
 
-                <div class="hidden-form__input">
-                    <input id="username" type="text" placeholder="Username">
-    
-                    <input id="password" type="password" placeholder="Password">
+                <div class="form_field">
+                    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Username</label>
+                </div>
+                <div class="form_field">
+                    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Password</label>
                 </div>
 
                 <div class="hidden-form__sitebox-recaptcha">
@@ -60,88 +61,88 @@
             </form>
 
 
+                        
+            <!-- add -->
+            <form class="hidden-form hidden-form__add">
+                <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+                <p class="hidden-form__title">Thêm sản phẩm</p>
+                <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+                </div>
+
+                <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+                </div>
+
+                <div class="form_field">
+                <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+                </div>
+                
+                <div class="form_field">
+                <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+                </div>
+                
+                <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+                </div>
+                
+                <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+                </div>
+
+                <div class="products_manager__btn">
+                <button>Thêm sản phẩm</button>
+            </div>
+            </form>
+
+
+            <!-- update form -->
+            <form class="hidden-form hidden-form__update">
+            <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+            <p class="hidden-form__title">Cập nhật sản phẩm</p>
+            <p class="hidden-form__sub-title">Nhập mã sản phẩm sau đó chỉnh sửa</p>
+            <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+            </div>
+
+            <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
+            </div>
+
+            <div class="form_field">
+                <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
+            </div>
             
-<!-- add -->
-<form class="hidden-form hidden-form__add">
-    <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
-    <p class="hidden-form__title">Thêm sản phẩm</p>
-    <div class="form_field">
-      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
-    </div>
+            <div class="form_field">
+                <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
+            </div>
+            
+            <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
+            </div>
+            
+            <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
+            </div>
 
-    <div class="form_field">
-      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
-    </div>
+            <div class="products_manager__btn">
+                <button>Thêm sản phẩm</button>
+            </div>
+            </form>
 
-    <div class="form_field">
-      <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
-    </div>
-    
-    <div class="form_field">
-      <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
-    </div>
-    
-    <div class="form_field">
-      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
-    </div>
-    
-    <div class="form_field">
-      <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
-    </div>
+            <!-- delete form -->
+            <form class="hidden-form hidden-form__delete">
 
-    <div class="products_manager__btn">
-      <button>Thêm sản phẩm</button>
-  </div>
-</form>
-
-
-<!-- update form -->
-<form class="hidden-form hidden-form__update">
-  <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
-  <p class="hidden-form__title">Cập nhật sản phẩm</p>
-  <p class="hidden-form__sub-title">Nhập mã sản phẩm sau đó chỉnh sửa</p>
-  <div class="form_field">
-    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
-  </div>
-
-  <div class="form_field">
-    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên sản phẩm</label>
-  </div>
-
-  <div class="form_field">
-    <input class="form_input" type="date" placeholder=" "><label class="form_lable" >Ngày nhập</label>
-  </div>
-  
-  <div class="form_field">
-    <input class="form_input" type="number" placeholder=" "><label class="form_lable" >Số lượng</label>
-  </div>
-  
-  <div class="form_field">
-    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Tên phân loại</label>
-  </div>
-  
-  <div class="form_field">
-    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Nhà cung cấp</label>
-  </div>
-
-  <div class="products_manager__btn">
-    <button>Thêm sản phẩm</button>
-</div>
-</form>
-
-<!-- delete form -->
-<form class="hidden-form hidden-form__delete">
-
-  <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
-  <p class="hidden-form__title">Xóa sản phẩm</p>
-  <p class="hidden-form__sub-title">Nhập mã sản phẩm để xóa</p>
-  <div class="form_field">
-    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
-  </div>
-  <div class="products_manager__btn">
-    <button>Xóa sản phẩm</button>
-</div>
-</form>
+            <a class="hidden-form__close" onclick="CloseF()"><img src="./images/close.png"></a>
+            <p class="hidden-form__title">Xóa sản phẩm</p>
+            <p class="hidden-form__sub-title">Nhập mã sản phẩm để xóa</p>
+            <div class="form_field">
+                <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Mã sản phẩm</label>
+            </div>
+            <div class="products_manager__btn">
+                <button>Xóa sản phẩm</button>
+            </div>
+            </form>
             <form class="hidden-form hidden-form__signup">
                 
                 <a class="hidden-form__back"  onclick = "ShowL()"><</a>
@@ -247,18 +248,35 @@
         <!-- nav-bar -->
         <div class="desk-menu">
             <ul class="product-selections">
-                <a href="index.html" class="product__item" style="border-bottom: #272727 solid 2.5px;">HOME</a>
+                <a href="index.html" class="product__item">HOME</a>
                 <a href="#new-arrivals" class="product__item">NEW ARRIVALS</a>
                 <a href="all_products.html" class="product__item">ALL PRODUCTS</a>
                 <a href="#sale-products" class="product__item">SALE</a>
                 <a href="#footer" class="product__item">CONTACT</a>
             </ul>
         </div>
-        
-        <!-- banner -->
-        <div class="banner">
-            <img src=".\images\banner-milk.png">
+
+        <div class="container">
+            <div class="contact">
+                <h1>CONTACT US</h1>
+                <div class="form_field">
+                    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Name / Company Name</label>
+                </div>
+                <div class="form_field">
+                    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Phone Number</label>
+                </div>
+                <div class="form_field">
+                    <input class="form_input" type="text" placeholder=" "><label class="form_lable" >Email</label>
+                </div>
+                <div class="form_field">
+                    <textarea class="form_input" type="text" placeholder=" " cols="118" rows="10" style="font-size: 2rem; padding-top: 10px; padding-left: 10px;"></textarea><label class="form_lable" >Message</label>
+                </div>
+                <div class="products_manager__btn">
+                    <button>SEND IT</button>
+                </div>
+            </div>
         </div>
+        
         <!-- footer -->
         <footer id="footer" class="footer">
             <div class="footer__item">
